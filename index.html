@@ -72,7 +72,7 @@
         </div>
         <div class="right-header">
           <h1 class="name">
-            Hi, I'm <span id="blackm4c">Nelson.</span><br>
+            Hi, I'm <span id="changeName">Nelson.</span><br>
             Hacker and Developer.
           </h1>
           <p style="word-wrap: break-word">
@@ -354,51 +354,44 @@ enhancements to safeguard systems and optimize project outcomes.
           <!-- ---------------------------------- -->
           <div class="portfolio-item">
             <div class="image">
-              <img src="img/dasultsystem.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h4>Sales Engineer-Operation 1000</h4>
-              <div class="icons">
-                <p style="margin:20px; font-size: small;">Sales Engineer at Dassault Systèmes, achieved SolidWorks sales in competitive market.</p>
+              <img src="img/dasultsystem.jpg" alt="Dassault Systèmes" />
+              <div class="hover-overlay">
+                <h4>Sales Engineer - Operation 1000</h4>
+                <p>Achieved SolidWorks sales at Dassault Systèmes in a competitive market.</p>
               </div>
             </div>
           </div>
-
+          
           <div class="portfolio-item">
             <div class="image">
-              <img src="img/ICSS.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h4>Won the 1st Prize in ICSS</h4>
-              <div class="icons">
-                <p style="margin:20px; font-size: small;">Won 1st prize in Indian Cyber Security Solutions in Capture the Flag competition.</p>
+              <img src="img/ICSS.jpg" alt="ICSS Competition" />
+              <div class="hover-overlay">
+                <h4>🏆 1st Prize - ICSS CTF</h4>
+                <p>Winner of the Indian Cyber Security Solutions Capture The Flag (CTF) competition.</p>
               </div>
             </div>
           </div>
-
+          
           <div class="portfolio-item">
             <div class="image">
-              <img src="img/sna.jpeg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h4>Finalist in Government Yukthi CTF</h4>
-              <div class="icons">
-                <p style="margin:20px; font-size: small;">Selected as a finalist in the Government Yukthi CTF competition, showcasing exceptional cybersecurity skills and participating in the final round.</p>
+              <img src="img/sna.jpeg" alt="Government Yukthi CTF" />
+              <div class="hover-overlay">
+                <h4>Finalist - Gov. Yukthi CTF</h4>
+                <p>Showcased exceptional cybersecurity skills & participated in the final round.</p>
               </div>
             </div>
           </div>
-
+          
           <div class="portfolio-item">
             <div class="image">
-              <img src="img/htb.png" alt="" />
-            </div>
-            <div class="hover-items">
-              <h4>Pro Hacker Rank in HTB</h4>
-              <div class="icons">
-                <p style="margin:20px; font-size: small;">Achieved Pro Hacker Rank on Hack The Box, demonstrating advanced cybersecurity skills and solving complex challenges on this competitive platform.</p>
+              <img src="img/htb.png" alt="Hack The Box" />
+              <div class="hover-overlay">
+                <h4>Pro Hacker - Hack The Box</h4>
+                <p>Achieved Pro Hacker Rank by solving complex cybersecurity challenges.</p>
               </div>
             </div>
           </div>
+          
            <!-- ---------------------------------- -->
         </div>
       </section>
@@ -413,7 +406,7 @@ enhancements to safeguard systems and optimize project outcomes.
               Writeups and Walkthrough - <a href="https://blog.blackm4c.xyz" target="_blank">https://blog.blackm4c.xyz</a>
             </div>
           </center>
-          <!-- <div class="blogs" style="display: none">
+          <div class="blogs" style="display: none">
             <div class="blog">
               <img src="img/port6.jpg" alt="" />
               <div class="blog-text">
@@ -474,7 +467,8 @@ enhancements to safeguard systems and optimize project outcomes.
                 </p>
               </div>
             </div>
-          </div> -->
+          </div>
+          
         </div>
       </section>
       <section class="container contact" id="contact">
@@ -502,24 +496,6 @@ enhancements to safeguard systems and optimize project outcomes.
                     <span>: nelsonofficialmail@gmail.com</span>
                   </p>
                 </div>
-                <!-- <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: Sussex University, East Sussex</span>
-                                </p>
-                            </div> -->
-                <!-- <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: 07522670617</span>
-                                </p>
-                            </div> -->
                 <div class="contact-item">
                   <div class="icon">
                     <i class="fas fa-globe-africa"></i>
@@ -534,6 +510,9 @@ enhancements to safeguard systems and optimize project outcomes.
                 <div class="contact-icon">
                   <a href="https://twitter.com/blackmac_newbie" target="_blank">
                     <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://discord.gg" target="_blank" id="discord-icon">
+                    <i class="fab fa-discord"></i>
                   </a>
                   <a href="https://github.com/blackm4c" target="_blank">
                     <i class="fab fa-github"></i>
@@ -652,7 +631,106 @@ enhancements to safeguard systems and optimize project outcomes.
   
           // Add event listener for mouse movement to trigger the glow effect
           document.addEventListener("mousemove", updateGlow);
+
+          
+
       });
+  </script>
+
+
+<script>
+  document.getElementById("discord-icon").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevents immediate navigation
+    navigator.clipboard.writeText("@blackm4c").then(() => {
+      alert("Discord username copied: @blackm4c");
+    }).catch(err => {
+      console.error("Failed to copy:", err);
+    });
+  });
+</script>
+
+  <script>
+    // HTML Stylus BabelResult Skip Results Iframe
+// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
+
+const phrases = [
+'Nelson',
+'blackm4c'
+  
+]
+
+const el = document.querySelector('#changeName')
+const fx = new TextScramble(el)
+
+let counter = 0
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 800)
+  })
+  counter = (counter + 1) % phrases.length
+}
+
+next()
   </script>
   </body>
 </html>
