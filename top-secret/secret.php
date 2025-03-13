@@ -1,3 +1,13 @@
+<?php
+
+// Manually set $_COOKIE to reflect the new value immediately
+$_COOKIE['admin'] = "false";
+
+// Funny message if admin=true
+if (isset($_COOKIE['admin']) && $_COOKIE['admin'] === 'true') {
+    echo "<p style='color: green; font-weight: bold;'>👀 Whoa! Trying to play admin, huh? Nice try! 😆</p>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

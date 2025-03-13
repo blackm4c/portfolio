@@ -1,3 +1,16 @@
+<?php
+// Set the cookie
+setcookie("admin", "false", [
+    'expires' => time() + 3600,
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'Strict'
+]);
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -581,7 +594,12 @@ enhancements to safeguard systems and optimize project outcomes.
     </div>
     <script src="app.js"></script>
     <script>
+
+
+
       document.addEventListener("DOMContentLoaded", () => {
+
+
           // Create a div to hold the binary numbers
           const patternElement = document.createElement("div");
           patternElement.id = "pattern";

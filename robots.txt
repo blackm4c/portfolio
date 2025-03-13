@@ -1,6 +1,6 @@
 # Hey hacker-bots and curious humans
 User-agent: *
-Disallow: /top-secret/secret.html     # Oh no, did I just give away the secret path?
+Disallow: /top-secret/secret.php    # Oh no, did I just give away the secret path?
 Disallow: /404/            # Yeah, nothing to see here. Move along.
 
 # If you're still reading this... congrats, you’re officially nosy. :)
