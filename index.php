@@ -217,7 +217,7 @@ setcookie("admin", "false", [
             <div class="tl-icon">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">Jun 2023 - OCT 2024 (Full-time)</p>
+            <p class="tl-duration">Jun 2023 - DEC 2024 (Full-time)</p>
             <h5>
               Penetration Tester<span>
                 -
