@@ -531,7 +531,7 @@ enhancements to safeguard systems and optimize project outcomes.
                     <i class="fab fa-github"></i>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/nelson-durairaj"
+                    href="https://www.linkedin.com/in/nelsondurairaj"
                     target="_blank"
                   >
                     <i class="fab fa-linkedin"></i>
